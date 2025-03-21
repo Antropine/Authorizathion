@@ -23,6 +23,8 @@
 
                 <button type="submit" class="btn btn-primary">Войти</button>
 
+                <a href="http://localhost:8000/auth/google/redirect" class="button">Войти через google</a>
+
             </form>
         </div>
     </div>
