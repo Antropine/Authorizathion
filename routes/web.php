@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\GoogleAuthController;
+use App\Http\Controllers\GithubAuthController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\AuthController;
 use Illuminate\Support\Facades\Route;
@@ -45,4 +46,7 @@ Route::get('/dashboard', function () {
 
 
 require __DIR__ . '/../config/auth.php';
+
+Route::get('/auth/github/redirect', [GithubAuthController::class, 'redirect'])->name('github.redirect');
+Route::get('/auth/github/callback', [GithubAuthController::class, 'callback'])->name('github.callback');
 

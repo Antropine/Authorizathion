@@ -25,7 +25,12 @@
                     <input name="password" type="password" class="form-control" id="exampleFormControlInput1" placeholder="password">
                 </div>
 
-                <button type="submit" class="btn btn-primary">Подтвердить</button>
+                <div class="d-flex justify-content-between align-items-center">
+                    <button type="submit" class="btn btn-primary">Подтвердить</button>
+                    <a href="{{ route('login') }}" class="text-decoration-none">
+                        Уже есть аккаунт?
+                    </a>
+                </div>
 
             </form>
         </div>

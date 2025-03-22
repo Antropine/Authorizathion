@@ -21,9 +21,17 @@
                     <input name="password" type="password" class="form-control" id="exampleFormControlInput1" placeholder="password">
                 </div>
 
-                <button type="submit" class="btn btn-primary">Войти</button>
+                <button type="submit" class="btn btn-primary mb-2">Войти</button>
 
-                <a href="http://localhost:8000/auth/google/redirect" class="button">Войти через google</a>
+                <!-- Кнопка для входа через Google-->
+                <a href="http://localhost:8000/auth/google/redirect" class="btn btn-dark w-100 mb-2">
+                    <i class="fab fa-github"></i> Войти через Google
+                </a>
+
+                <!-- Кнопка для входа через GitHub -->
+                <a href="http://localhost:8000/auth/github/redirect" class="btn btn-dark w-100 mb-2">
+                    <i class="fab fa-github"></i> Войти через GitHub
+                </a>
 
             </form>
         </div>
